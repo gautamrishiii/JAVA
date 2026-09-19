@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Report</title>
+    <style>
+        @page {
+            size: A4 landscape;
+            margin: 10mm;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 16pt;
+            font-weight: bold;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+        .header h3 {
+            margin: 4px 0 10px 0;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .sub-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 10pt;
+            margin-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #000;
+            height: 22px;
+            padding: 2px;
+        }
+        th {
+            font-weight: bold;
+            background-color: #fff;
+        }
+        .col-sno { width: 3%; }
+        .col-id { width: 8%; }
+        .col-name { width: 14%; }
+        .col-desig { width: 10%; }
+        .col-day { width: 2%; }
+        .col-total { width: 6%; font-size: 8pt; line-height: 1.1; }
+        
+        .footer {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 10pt;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>URMILA INTERNATIONAL SERVICES PRIVATE LIMITED</h2>
+        <h3>S.K.M.C Uma Nagar Muzaffarpur (Bihar)</h3>
+        <h3>Attendance report for the Month of ______________</h3>
+    </div>
+
+    <div class="sub-header">
+        <div>Employee Name / Designation:</div>
+        <!-- <div>Attendance report for the Month of ___________________</div> -->
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="col-sno">S.No</th>
+                <th class="col-id">Employee Id</th>
+                <th class="col-name">Employee Name</th>
+                <th class="col-desig">Designation</th>
+                <!-- Days 1 to 31 -->
+                <th class="col-day">1</th>
+                <th class="col-day">2</th>
+                <th class="col-day">3</th>
+                <th class="col-day">4</th>
+                <th class="col-day">5</th>
+                <th class="col-day">6</th>
+                <th class="col-day">7</th>
+                <th class="col-day">8</th>
+                <th class="col-day">9</th>
+                <th class="col-day">10</th>
+                <th class="col-day">11</th>
+                <th class="col-day">12</th>
+                <th class="col-day">13</th>
+                <th class="col-day">14</th>
+                <th class="col-day">15</th>
+                <th class="col-day">16</th>
+                <th class="col-day">17</th>
+                <th class="col-day">18</th>
+                <th class="col-day">19</th>
+                <th class="col-day">20</th>
+                <th class="col-day">21</th>
+                <th class="col-day">22</th>
+                <th class="col-day">23</th>
+                <th class="col-day">24</th>
+                <th class="col-day">25</th>
+                <th class="col-day">26</th>
+                <th class="col-day">27</th>
+                <th class="col-day">28</th>
+                <th class="col-day">29</th>
+                <th class="col-day">30</th>
+                <th class="col-day">31</th>
+                <th class="col-total">total present day</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <!-- 31 empty day cells -->
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <div>WARDEN SIGNATURE</div>
+        <div>CHIEF WARDEN / CAMPUS INCHARGE SIGNATURE</div>
+    </div>
+
+</body>
+</html>
