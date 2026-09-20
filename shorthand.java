@@ -432,6 +432,52 @@
 
 // }
 
+
+//FIND THE MAX AND MIN ELEMENT OF THE ARRAY
+// import java.util.Scanner;
+// public class shorthand{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("enter the size of the array");
+//         int size=sc.nextInt();
+//         int[] arr=new int[size];
+//         for(int i=0;i<arr.length;i++){
+//             System.out.println("enter the element at index = "+i);
+//             arr[i]=sc.nextInt();
+
+//         }
+//         for(int i=0;i<arr.length;i++){
+//             System.out.print(arr[i]+" ");
+//         }
+//         max(arr);
+//         min(arr);
+         
+//     }
+//     public static void max(int[] arr){
+//         int max=arr[0];
+//          for(int i=0;i<arr.length;i++){
+//             if(arr[0]<arr[i]){
+//                 max=arr[i];
+//             }
+
+//         }
+//         System.out.println("the max element is "+max);
+
+//     }
+//     public static void min(int[] arr){
+//         int min=arr[0];
+//          for(int i=0;i<arr.length;i++){
+//             if(arr[0]>arr[i]){
+//                 min=arr[i];
+//             }
+
+//         }
+//         System.out.println("the max element is "+min);
+
+//     }
+   
+// }
+
 import java.util.Scanner;
 public class shorthand{
     public static void main(String[] args){
@@ -439,39 +485,43 @@ public class shorthand{
         System.out.println("enter the size of the array");
         int size=sc.nextInt();
         int[] arr=new int[size];
+        
         for(int i=0;i<arr.length;i++){
-            System.out.println("enter the element at index = "+i);
+            System.out.print("enter the element in the array at the index "+i);
             arr[i]=sc.nextInt();
-
         }
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
-        max(arr);
-        min(arr);
-         
-    }
-    public static void max(int[] arr){
-        int max=arr[0];
-         for(int i=0;i<arr.length;i++){
-            if(arr[0]<arr[i]){
-                max=arr[i];
-            }
-
+        boolean a=decreasing(arr);
+        boolean b=increasing(arr);
+        if(a || b){
+            System.out.println("the aarray is shorted");
+        }else{
+            System.out.println("the aarray is not shorted");
         }
-        System.out.println("the max element is "+max);
+        
 
     }
-    public static void min(int[] arr){
-        int min=arr[0];
-         for(int i=0;i<arr.length;i++){
-            if(arr[0]>arr[i]){
-                min=arr[i];
+    public static boolean decreasing(int[] arr){
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]<=arr[i-1]){
+                return false;
+
             }
-
+            
         }
-        System.out.println("the max element is "+min);
-
+        return true;
+        
     }
-   
+    public static boolean increasing(int[] arr){
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>=arr[i-1]){
+                return false;
+
+            }
+        }
+        return true;
+    }
+    
 }
