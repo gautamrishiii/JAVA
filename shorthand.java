@@ -478,50 +478,113 @@
    
 // }
 
-import java.util.Scanner;
+// WAT TO CHECK WHETHER THE ARRAY IS SHORTED OR NOT
+// import java.util.Scanner;
+// public class shorthand{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("enter the size of the array");
+//         int size=sc.nextInt();
+//         int[] arr=new int[size];
+        
+//         for(int i=0;i<arr.length;i++){
+//             System.out.print("enter the element in the array at the index "+i);
+//             arr[i]=sc.nextInt();
+//         }
+//         for(int i=0;i<arr.length;i++){
+//             System.out.print(arr[i]+" ");
+//         }
+//         boolean a=decreasing(arr);
+//         boolean b=increasing(arr);
+//         if(a || b){
+//             System.out.println("the aarray is shorted");
+//         }else{
+//             System.out.println("the aarray is not shorted");
+//         }
+        
+
+//     }
+//     public static boolean decreasing(int[] arr){
+//         for(int i=1;i<arr.length;i++){
+//             if(arr[i]<=arr[i-1]){
+//                 return false;
+
+//             }
+            
+//         }
+//         return true;
+        
+//     }
+//     public static boolean increasing(int[] arr){
+//         for(int i=1;i<arr.length;i++){
+//             if(arr[i]>=arr[i-1]){
+//                 return false;
+
+//             }
+//         }
+//         return true;
+//     }
+    
+// }
+ 
+
+//     public static boolean decreasing(int[] arr){
+//         for(int i=1;i<arr.length;i++){
+//             if(arr[i]<=arr[i-1]){
+//                 return false;
+
+//             }
+            
+//         }
+//         return true;
+        
+//     }
+//     public static boolean increasing(int[] arr){
+//         for(int i=1;i<arr.length;i++){
+//             if(arr[i]>=arr[i-1]){
+//                 return false;
+
+//             }
+//         }
+//         return true;
+//     }
+    
+// }
+ import java.util.Scanner;
 public class shorthand{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
+    public static void main(){
+        Scanner sc = new Scanner(System.in);
         System.out.println("enter the size of the array");
         int size=sc.nextInt();
         int[] arr=new int[size];
-        
-        for(int i=0;i<arr.length;i++){
-            System.out.print("enter the element in the array at the index "+i);
+        int i=0;
+        while(i<arr.length){
+            System.out.println("print the element at index "+i+" ");
             arr[i]=sc.nextInt();
+            i++;
+
         }
-        for(int i=0;i<arr.length;i++){
+        for(int j=0;j<arr.length;j++){
             System.out.print(arr[i]+" ");
         }
-        boolean a=decreasing(arr);
-        boolean b=increasing(arr);
-        if(a || b){
-            System.out.println("the aarray is shorted");
-        }else{
-            System.out.println("the aarray is not shorted");
-        }
         
-
-    }
-    public static boolean decreasing(int[] arr){
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]<=arr[i-1]){
-                return false;
-
-            }
-            
+        System.out.println("enter the element you want to searach");
+        int search=sc.nextInt();
+        if(search==arr[i]){
+            System.out.println("the element is found at index"+arr[i]);  
         }
-        return true;
+        // int ele=occurance(arr);
+        // System.out.println(ele);
         
     }
-    public static boolean increasing(int[] arr){
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]>=arr[i-1]){
-                return false;
+    // public static int occurance(int[] arr){
+    //     Scanner sc = new Scanner(System.in);
+    //     System.out.println("enter the element you want to searach");
+    //     int search=sc.nextInt();
+    //     if(search==arr[i]){
+    //         System.out.println("the element is found at index"+arr[i]);  
+    //     }
+    //     return 0;
 
-            }
-        }
-        return true;
-    }
-    
+    // }
 }
