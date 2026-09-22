@@ -629,29 +629,83 @@
 //     }
 // }
 
+// public class shorthand{
+//     public static void main(String[] args){
+//         Student s1=new Student("gautam",22,"NIT");
+//         System.out.println(s1.name);
+//         System.out.println(s1.age);
+//         System.out.println(s1.clg);
+//         Student.printLN();
+//         s1.printLN();
+//     }
+// }
+// class Student{
+//     String name;
+//     int age;
+//     String clg;
+
+//     Student(String n,int a, String c){
+//         this.name=n;
+//         this.age=a;
+//         this.clg=c;
+//     }
+
+
+//     static void printLN(){
+//         System.out.println("ram");
+//     }
+// }
+
 public class shorthand{
     public static void main(String[] args){
-        Student s1=new Student("gautam",22,"NIT");
-        System.out.println(s1.name);
-        System.out.println(s1.age);
-        System.out.println(s1.clg);
-        Student.printLN();
-        s1.printLN();
+        // BankAccount ba=new BankAccount();
+        
+        
+        // ba.deposit(300);
+        // ba.withdraw(200);
+        // System.out.println(ba.getBalance());
+        Student s1=new Student("Gautam",22,66,"NIT");
+        System.out.println("s1.name");
+        System.out.println(s1.setName("ram"));
+        
+
     }
 }
+class BankAccount{
+    private double balance;
+        
+
+
+    public void deposit(int amount){
+        balance += amount;
+
+    }
+    public void withdraw(int amount){
+        balance -= amount;
+    }
+    public double getBalance(){
+        return balance;
+    }
+   
+
+}
 class Student{
-    String name;
-    int age;
-    String clg;
+    private String name;
+    private int age;
+    private int roll;
+    private String clg;
 
-    Student(String n,int a, String c){
-        this.name=n;
-        this.age=a;
-        this.clg=c;
+    Student(String name,int age,int roll,String clg){
+        this.name=name;
+        this.age=age;
+        this.roll=roll;
+        this.clg=clg;
+    }
+    public String setName(String name){
+        this.name=name;
+        return name;
     }
 
 
-    static void printLN(){
-        System.out.println("ram");
-    }
+
 }
