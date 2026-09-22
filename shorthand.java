@@ -600,29 +600,58 @@
 
 //     }
 // }
+
+//----------------------
 //creating staic keyword
+// public class shorthand{
+//     public static void main(String[] args){
+//         Student s1= new Student("Gautam",22);
+//         System.out.println(s1.name);
+//         System.out.println(s1.age);
+//         System.out.println(s1.clg);
+//         System.out.println(Student.clg);
+//         Student s2= new Student("Ram",21);
+//         System.out.println(s2.name);
+//         System.out.println(s2.age);
+//         System.out.println(s2.clg);
+//         System.out.println(Student.clg);
+
+//     }
+// }
+// class Student{
+//     String name;
+//     int age;
+//     static String clg="NIT";
+    
+//     Student(String n,int a){
+//         this.name=n;
+//         this.age=a;
+//     }
+// }
+
 public class shorthand{
     public static void main(String[] args){
-        Student s1= new Student("Gautam",22);
+        Student s1=new Student("gautam",22,"NIT");
         System.out.println(s1.name);
         System.out.println(s1.age);
         System.out.println(s1.clg);
-        System.out.println(Student.clg);
-        Student s2= new Student("Ram",21);
-        System.out.println(s2.name);
-        System.out.println(s2.age);
-        System.out.println(s2.clg);
-        System.out.println(Student.clg);
-
+        Student.printLN();
+        s1.printLN();
     }
 }
 class Student{
     String name;
     int age;
-    static String clg="NIT";
-    
-    Student(String n,int a){
+    String clg;
+
+    Student(String n,int a, String c){
         this.name=n;
         this.age=a;
+        this.clg=c;
+    }
+
+
+    static void printLN(){
+        System.out.println("ram");
     }
 }
