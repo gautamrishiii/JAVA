@@ -550,41 +550,50 @@
 //     }
     
 // }
- import java.util.Scanner;
-public class shorthand{
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter the size of the array");
-        int size=sc.nextInt();
-        int[] arr=new int[size];
-        int i=0;
-        while(i<arr.length){
-            System.out.println("print the element at index "+i+" ");
-            arr[i]=sc.nextInt();
-            i++;
+ 
+// import java.util.*;
+// public class shorthand{
+//     public static void main(String[] args){
+//         Student s1 = new Student();
+//         System.out.println(s1.name);
+//         System.out.println(s1.age);
+//         System.out.println(s1.roll);
+//         System.out.println(s1.clg);
+//     }
+// }
 
-        }
-        for(int j=0;j<arr.length;j++){
-            System.out.print(arr[i]+" ");
-        }
-        
-        System.out.println("enter the element you want to searach");
-        int search=sc.nextInt();
-        if(search==arr[i]){
-            System.out.println("the element is found at index"+arr[i]);  
-        }
-        // int ele=occurance(arr);
-        // System.out.println(ele);
+
+// class Student{
+//     String name;
+//     int age;
+//     int roll;
+//     String clg;
+// }
+import java.util.*;
+public class shorthand{
+    public static void main(String[] args){
+        Student s1 = new Student("gautam", 22, 66, "NIT");
+        // Student s1 = new Student(n:"gautam", a:22, r:66, c:"NIT");
+        System.out.println(s1.name);
+        System.out.println(s1.age);
+        System.out.println(s1.roll);
+        System.out.println(s1.clg);
         
     }
-    // public static int occurance(int[] arr){
-    //     Scanner sc = new Scanner(System.in);
-    //     System.out.println("enter the element you want to searach");
-    //     int search=sc.nextInt();
-    //     if(search==arr[i]){
-    //         System.out.println("the element is found at index"+arr[i]);  
-    //     }
-    //     return 0;
+}
+class Student{
+    String name;
+    int age;
+    int roll;
+    String clg;
 
-    // }
+
+    Student(String n,int a,int r,String c){
+
+        name =n;
+        age=a;
+        roll=r;
+        clg=c;
+
+    }
 }
