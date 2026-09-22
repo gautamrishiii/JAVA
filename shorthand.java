@@ -569,31 +569,60 @@
 //     int roll;
 //     String clg;
 // }
-import java.util.*;
+
+
+
+// import java.util.*;
+// public class shorthand{
+//     public static void main(String[] args){
+//         Student s1 = new Student("gautam", 22, 66, "NIT");
+//         // Student s1 = new Student(n:"gautam", a:22, r:66, c:"NIT");
+//         System.out.println(s1.name);
+//         System.out.println(s1.age);
+//         System.out.println(s1.roll);
+//         System.out.println(s1.clg);
+        
+//     }
+// }
+// class Student{
+//     String name;
+//     int age;
+//     int roll;
+//     String clg;
+
+
+//     Student(String n,int a,int r,String c){
+
+//         name =n;
+//         age=a;
+//         roll=r;
+//         clg=c;
+
+//     }
+// }
+//creating staic keyword
 public class shorthand{
     public static void main(String[] args){
-        Student s1 = new Student("gautam", 22, 66, "NIT");
-        // Student s1 = new Student(n:"gautam", a:22, r:66, c:"NIT");
+        Student s1= new Student("Gautam",22);
         System.out.println(s1.name);
         System.out.println(s1.age);
-        System.out.println(s1.roll);
         System.out.println(s1.clg);
-        
+        System.out.println(Student.clg);
+        Student s2= new Student("Ram",21);
+        System.out.println(s2.name);
+        System.out.println(s2.age);
+        System.out.println(s2.clg);
+        System.out.println(Student.clg);
+
     }
 }
 class Student{
     String name;
     int age;
-    int roll;
-    String clg;
-
-
-    Student(String n,int a,int r,String c){
-
-        name =n;
-        age=a;
-        roll=r;
-        clg=c;
-
+    static String clg="NIT";
+    
+    Student(String n,int a){
+        this.name=n;
+        this.age=a;
     }
 }
