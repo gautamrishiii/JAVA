@@ -656,56 +656,100 @@
 //     }
 // }
 
-public class shorthand{
-    public static void main(String[] args){
-        // BankAccount ba=new BankAccount();
+// public class shorthand{
+//     public static void main(String[] args){
+//         // BankAccount ba=new BankAccount();
         
         
-        // ba.deposit(300);
-        // ba.withdraw(200);
-        // System.out.println(ba.getBalance());
-        Student s1=new Student("Gautam",22,66,"NIT");
-        System.out.println("s1.name");
-        System.out.println(s1.setName("ram"));
+//         // ba.deposit(300);
+//         // ba.withdraw(200);
+//         // System.out.println(ba.getBalance());
+//         Student s1=new Student("Gautam",22,66,"NIT");
+//         System.out.println("s1.name");
+//         System.out.println(s1.setName("ram"));
         
 
-    }
-}
-class BankAccount{
-    private double balance;
+//     }
+// }
+// class BankAccount{
+//     private double balance;
         
 
 
-    public void deposit(int amount){
-        balance += amount;
+//     public void deposit(int amount){
+//         balance += amount;
 
-    }
-    public void withdraw(int amount){
-        balance -= amount;
-    }
-    public double getBalance(){
-        return balance;
-    }
+//     }
+//     public void withdraw(int amount){
+//         balance -= amount;
+//     }
+//     public double getBalance(){
+//         return balance;
+//     }
    
 
+// }
+// class Student{
+//     private String name;
+//     private int age;
+//     private int roll;
+//     private String clg;
+
+//     Student(String name,int age,int roll,String clg){
+//         this.name=name;
+//         this.age=age;
+//         this.roll=roll;
+//         this.clg=clg;
+//     }
+//     public String setName(String name){
+//         this.name=name;
+//         return name;
+//     }
+
+
+
+// }
+
+public class shorthand{
+    public static void main(String[] args){
+        Gari c=new Bike();
+        c.start();
+        c.running();
+        c.stop();
+
+    }
 }
-class Student{
-    private String name;
-    private int age;
-    private int roll;
-    private String clg;
+abstract class Gari{
+    
+    abstract void start();
+    abstract void running();
+    abstract void stop();
 
-    Student(String name,int age,int roll,String clg){
-        this.name=name;
-        this.age=age;
-        this.roll=roll;
-        this.clg=clg;
+}
+class Car extends Gari{
+    void start(){
+        System.out.println("car is started");
     }
-    public String setName(String name){
-        this.name=name;
-        return name;
+    void running(){
+        System.out.println("car is stopped");
     }
+    void stop(){
+        System.out.println("car is stopped");
 
+    }
+    
+}
+class Bike extends Gari{
+    void start(){
+        System.out.println("bike is started");
+    }
+    void running(){
+        System.out.println("bike is stopped");
+    }
+    void stop(){
+        System.out.println("bike is stopped");
 
+    }
+    
 
 }
