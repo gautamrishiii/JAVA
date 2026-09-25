@@ -710,46 +710,51 @@
 
 // }
 
-public class shorthand{
-    public static void main(String[] args){
-        Gari c=new Bike();
-        c.start();
-        c.running();
-        c.stop();
+// public class shorthand{
+//     public static void main(String[] args){
+//         Gari c=new Bike();
+//         c.start();
+//         c.running();
+//         c.stop();
 
-    }
-}
-abstract class Gari{
+//     }
+// }
+// abstract class Gari{
     
-    abstract void start();
-    abstract void running();
-    abstract void stop();
+//     abstract void start();
+//     abstract void running();
+//     abstract void stop();
 
-}
-class Car extends Gari{
-    void start(){
-        System.out.println("car is started");
-    }
-    void running(){
-        System.out.println("car is stopped");
-    }
-    void stop(){
-        System.out.println("car is stopped");
+// }
+// class Car extends Gari{
+//     void start(){
+//         System.out.println("car is started");
+//     }
+//     void running(){
+//         System.out.println("car is stopped");
+//     }
+//     void stop(){
+//         System.out.println("car is stopped");
 
-    }
+//     }
     
-}
-class Bike extends Gari{
-    void start(){
-        System.out.println("bike is started");
-    }
-    void running(){
-        System.out.println("bike is stopped");
-    }
-    void stop(){
-        System.out.println("bike is stopped");
+// }
+// class Bike extends Gari{
+//     void start(){
+//         System.out.println("bike is started");
+//     }
+//     void running(){
+//         System.out.println("bike is stopped");
+//     }
+//     void stop(){
+//         System.out.println("bike is stopped");
 
-    }
+//     }
     
 
+// }
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
 }
