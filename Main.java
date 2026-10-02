@@ -772,5 +772,8 @@ public class Main{
         int a=6;
         int b=6;
         System.out.println(a==b);
+        double c=7.8;
+        double d=7.8;
+        System.out.println(a==b);
     }
 }
