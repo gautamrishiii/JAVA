@@ -776,5 +776,7 @@ public class Main{
         double d=7.8;
         System.out.println(a==b);
         System.out.println(a+b);
+        System.out.println("Hello World");
+        System.out.println("Hello World");
     }
 }
