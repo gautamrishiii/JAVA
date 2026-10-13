@@ -82,6 +82,7 @@ public class dsa{
             System.out.print(arr[i] +" ");
         }
         System.out.println("Hi");
+         System.out.println("Hi");
     }
 }
 
