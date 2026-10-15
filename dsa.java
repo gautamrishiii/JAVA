@@ -92,29 +92,55 @@
 
 //PRINTING ONLY THE NEGATIVE ELEMENTS
 
+// import java.util.Scanner;
+// public class dsa{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter the size of the array :"+" ");
+//         int n=sc.nextInt();
+//         int[] arr=new int[n];
+        
+//         //taking the input from the user in the array
+//         System.out.print("Enter the elements of the array :"+" ");
+//         for(int i=0;i<arr.length;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         //printing all the elements of the array which are negative
+//         System.out.print("The negative elements of the arrys are :"+" ");
+//         for(int i=0;i<=arr.length;i++){
+//             if(arr[i]<0){
+//                 System.out.print(arr[i]+" ");
+//             }
+
+//         }
+
+     
+//     }
+// }
+
+// PRINTING THE SUM OF THE TOTAL ELEMENT OF THE ARRAY
+
 import java.util.Scanner;
 public class dsa{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the size of the array :"+" ");
+        System.out.print("Entere the size of the array :");
         int n=sc.nextInt();
+
         int[] arr=new int[n];
         
-        //taking the input from the user in the array
-        System.out.print("Enter the elements of the array :"+" ");
+        System.out.print("Entere the elements of the array :"+" ");
         for(int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();
         }
-        //printing all the elements of the array which are negative
-        System.out.print("The negative elements of the arrys are :"+" ");
-        for(int i=0;i<=arr.length;i++){
-            if(arr[i]<0){
-                System.out.print(arr[i]+" ");
-            }
-
+        int sum=0;
+        
+        for(int i=0;i<arr.length;i++){
+            sum+=arr[i];
+            
         }
+        System.out.print("The sum of the array elements are ="+ sum);
 
-     
     }
 }
 
