@@ -171,6 +171,7 @@ public class dsa{
         System.out.print("The product of the array elements are =");
         System.out.print("The product of the array elements are =" +product);
         System.out.print("The product of the array elements are =" +product);
-
+        System.out.print("The product of the array elements are =" +product);
+        System.out.print("The product of the array elements are =" +product);
     }
 }
