@@ -15,9 +15,10 @@ public class addToIndex {
         System.out.print(arr[i]+" ");
         System.out.print(arr[i]+" ");
         System.out.print(arr[i]+" ");
-         System.out.print(arr[i]+" ");
         System.out.print(arr[i]+" ");
-        
+        System.out.print(arr[i]+" ");
+        System.out.print(arr[i]+" ");
+        System.out.print(arr[i]+" ");
     }
     }
     
