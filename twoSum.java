@@ -23,6 +23,8 @@ public class twoSum {
             }
         }System.out.println("Target not found");
         System.out.println("Target not found");
+        System.out.println("Target not found");
+        
         
 
     }
