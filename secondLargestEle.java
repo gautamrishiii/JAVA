@@ -30,6 +30,7 @@ public class secondLargestEle {
         }
         System.out.println("smax = "+smax);
         System.out.println("smax = "+smax);
+        System.out.println("smax = "+smax);
 
 
 
