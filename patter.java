@@ -57,6 +57,7 @@ public class patter {
             System.out.println();
             System.out.println();
             System.out.println();
+            System.out.println();
         }
         
         
