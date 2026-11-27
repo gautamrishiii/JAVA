@@ -55,7 +55,7 @@ public class patter {
             System.out.println();
             System.out.println();
             System.out.println("to the");
-            System.out.println("all");
+            System.out.println("all t");
             System.out.println("OL");
             System.out.println("ok");
         }
